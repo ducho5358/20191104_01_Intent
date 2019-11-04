@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         nameInputBtn.setOnClickListener {
 
             val intent = Intent(this, EditUserInfoActivity::class.java)
-            startActivity(intent)
+            startActivityForResult(intent, 1000)
         }
 
     }
